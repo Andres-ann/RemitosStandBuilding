@@ -1,386 +1,689 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap & CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
 
-  <!-- Bootstrap & CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <title>Stand Building - Impresión de Remitos</title>
+  </head>
 
-  <title>Stand Building - Impresión de Remitos</title>
-</head>
+  <body>
+    <form class="container card border-dark mt-5 mb-5 p-5" id="Form-Datos">
+      <h1 class="text-center pb-3">Impresión de Remitos</h1>
 
-<body>
-  <form class="container card border-dark mt-5 mb-5 p-5" id="Form-Datos">
-    <h1 class="text-center pb-3">
-      Impresión de Remitos
-    </h1>
-
-    <!--Inicio Cabecera-->
-    <div class="border border-secondary mt-2">
-      <div class="row mt-2 p-3">
-        <div class="col-5 text-center">
-          <h1 class="pb-5">Stand Building S.R.L.</h1>
-          <p class="m-0">Llerena 2460 4° - Dpto. "B"</p>
-          <p class="pb-4">C1427DEB - C.A.B.A.</p>
-          <p>IVA RESPONSABLE INSCRIPTO</p>
-        </div>
-
-        <div class="col-auto offset-1 border border-3 border-secondary text-center align-self-baseline offset-1">
-          <h2>R</h2>
-        </div>
-
-        <div class="col-auto offset-1">
-          <h4>Remito</h4>
-          <p class="small m-0">DOCUMENTO NO VÁLIDO COMO FACTURA</p>
-          <p class="fw-bold">N° 0002 - 00000123</p>
-
-          <!-- Campo para Fecha -->
-          <div class="d-flex mt-4 mb-4">
-            <label for="Fecha">Fecha:</label>
-            <input type="date" name="Fecha" class="ms-1 form-control" id="Fecha" autofocus required />
+      <!--Inicio Cabecera-->
+      <div class="border border-secondary mt-2">
+        <div class="row mt-2 p-3">
+          <div class="col-5 text-center">
+            <h1 class="pb-5">Stand Building S.R.L.</h1>
+            <p class="m-0">Llerena 2460 4° - Dpto. "B"</p>
+            <p class="pb-4">C1427DEB - C.A.B.A.</p>
+            <p>IVA RESPONSABLE INSCRIPTO</p>
           </div>
 
-          <div>
-            <p class="small m-0">CUIT: 30-71606107-4</p>
-            <p class="small m-0">ING. BRUTOS R.G. 30-71606107-4</p>
-            <p class="small">Inicio de Activ.: 09/2018</p>
+          <div
+            class="col-auto offset-1 border border-3 border-secondary text-center align-self-baseline offset-1"
+          >
+            <h2>R</h2>
+          </div>
+
+          <div class="col-auto offset-1">
+            <h4>Remito</h4>
+            <p class="small m-0">DOCUMENTO NO VÁLIDO COMO FACTURA</p>
+            <p class="fw-bold">N° 0002 - 00000123</p>
+
+            <!-- Campo para Fecha -->
+            <div class="d-flex mt-4 mb-4">
+              <label for="Fecha">Fecha:</label>
+              <input
+                type="date"
+                name="Fecha"
+                class="ms-1 form-control"
+                id="Fecha"
+                autofocus
+                required
+              />
+            </div>
+
+            <div>
+              <p class="small m-0">CUIT: 30-71606107-4</p>
+              <p class="small m-0">ING. BRUTOS R.G. 30-71606107-4</p>
+              <p class="small">Inicio de Activ.: 09/2018</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--Fin Cabecera-->
+      <!--Fin Cabecera-->
 
-    <!-- Incio Datos de Facturacion -->
-    <div class="mt-4">
-      <div class="row mb-3">
-        <label for="Empresa" class="col-1 offset-1 col-form-label">Señor/es:</label>
-        <div class="col-10">
-          <input type="text" class="form-control" id="Empresa" required />
+      <!-- Incio Datos de Facturacion -->
+      <div class="mt-4">
+        <div class="row mb-3">
+          <label for="Empresa" class="col-1 offset-1 col-form-label"
+            >Señor/es:</label
+          >
+          <div class="col-10">
+            <input type="text" class="form-control" id="Empresa" required />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="Domicilio" class="col-1 offset-1 col-form-label"
+            >Domicilio:</label
+          >
+          <div class="col-10">
+            <input type="text" class="form-control" id="Domicilio" required />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="IVA" class="col-1 offset-1 col-form-label">IVA:</label>
+          <div class="col-4">
+            <input type="text" class="form-control" id="IVA" required />
+          </div>
+
+          <label for="CUIT" class="col-1 col-form-label">CUIT:</label>
+          <div class="col-5">
+            <input type="text" class="form-control" id="CUIT" required />
+          </div>
+          <div class="row mb-3"></div>
         </div>
       </div>
-      <div class="row mb-3">
-        <label for="Domicilio" class="col-1 offset-1 col-form-label">Domicilio:</label>
-        <div class="col-10">
-          <input type="text" class="form-control" id="Domicilio" required />
+      <!-- Fin Datos de Facturacion -->
+
+      <!-- Incio Datos de Facturacion -->
+      <div
+        class="row col-12 border-secondary border-top border-bottom m-1 pt-2 pb-2"
+      >
+        <div class="col-5 offset-1">
+          <p class="small fw-bold m-0 col-form-label">
+            REMITIMOS A USTED LA SIGUIENTE MERCADERIA
+          </p>
+        </div>
+        <div class="row col-5">
+          <div class="col-2">
+            <p class="small fw-bold m-0 col-form-label">Fact.N°</p>
+          </div>
+          <div class="col-8 offset-1">
+            <input
+              type="text"
+              class="col-auto form-control col-form-label mb-2"
+              id="Fact"
+            />
+          </div>
         </div>
       </div>
-      <div class="row mb-3">
-        <label for="IVA" class="col-1 offset-1 col-form-label">IVA:</label>
-        <div class="col-4">
-          <input type="text" class="form-control" id="IVA" required />
-        </div>
 
-        <label for="CUIT" class="col-1 col-form-label">CUIT:</label>
-        <div class="col-5">
-          <input type="text" class="form-control" id="CUIT" required />
-        </div>
-        <div class="row mb-3"></div>
-      </div>
-    </div>
-    <!-- Fin Datos de Facturacion -->
+      <!-- Incio Tabla de Items -->
+      <table class="table border-secondary border-bottom">
+        <!-- Columnas de Tabla -->
+        <thead>
+          <tr>
+            <th class="col-2 small fw-bold m-0 text-center" scope="col">
+              FECHA
+            </th>
+            <th class="col-8 small fw-bold m-0 text-center" scope="col">
+              DESCRIPCIÓN
+            </th>
+            <th class="col-2 small fw-bold m-0 text-center" scope="col">
+              VALOR
+            </th>
+          </tr>
+        </thead>
+        <!-- Fin Columnas de Tabla -->
 
-
-    <!-- Incio Datos de Facturacion -->
-    <div class="row col-12 border-secondary border-top border-bottom m-1 pt-2 pb-2">
-      <div class="col-5 offset-1">
-        <p class="small fw-bold m-0 col-form-label">
-          REMITIMOS A USTED LA SIGUIENTE MERCADERIA
-        </p>
-      </div>
-      <div class="row col-5">
-        <div class="col-2">
-          <p class="small fw-bold m-0 col-form-label">Fact.N°</p>
-        </div>
-        <div class="col-8 offset-1">
-          <input type="text" class="col-auto form-control col-form-label mb-2" id="Fact" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Incio Tabla de Items -->
-    <table class="table border-secondary border-bottom">
-      <!-- Columnas de Tabla -->
-      <thead>
-        <tr>
-          <th class="col-2 small fw-bold m-0 text-center" scope="col">FECHA</th>
-          <th class="col-8 small fw-bold m-0 text-center" scope="col">DESCRIPCIÓN</th>
-          <th class="col-2 small fw-bold m-0 text-center" scope="col">VALOR</th>
-        </tr>
-      </thead>
-      <!-- Fin Columnas de Tabla -->
-
-      <tbody>        
-        <!--  Item1  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-1" class="form-control" maxlength="10" id="cantIt-1">
-          </th>
-          <td>
-            <input type="text" name="DescIt-1" class="form-control" maxlength="75" id="DescIt-1">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-1" class="text-end form-control" maxlength="12" id="ValorIt-1">
-          </td>
-        </tr>
+        <tbody>
+          <!--  Item1  -->
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-1"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-1"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-1"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-1"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-1"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-1"
+              />
+            </td>
+          </tr>
 
           <!--  Item2  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-2" class="form-control" maxlength="10" id="cantIt-2">
-          </th>
-          <td>
-            <input type="text" name="DescIt-2" class="form-control" maxlength="75" id="DescIt-2">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-2" class="text-end form-control" maxlength="12" id="ValorIt-2">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-2"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-2"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-2"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-2"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-2"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-2"
+              />
+            </td>
+          </tr>
 
           <!--  Item3  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-3" class="form-control" maxlength="10" id="cantIt-3">
-          </th>
-          <td>
-            <input type="text" name="DescIt-3" class="form-control" maxlength="75" id="DescIt-3">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-3" class="text-end form-control" maxlength="12" id="ValorIt-3">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-3"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-3"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-3"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-3"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-3"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-3"
+              />
+            </td>
+          </tr>
 
           <!--  Item4  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-4" class="form-control" maxlength="10" id="cantIt-4">
-          </th>
-          <td>
-            <input type="text" name="DescIt-4" class="form-control" maxlength="75" id="DescIt-4">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-4" class="text-end form-control" maxlength="12" id="ValorIt-4">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-4"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-4"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-4"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-4"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-4"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-4"
+              />
+            </td>
+          </tr>
 
           <!--  Item5  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-5" class="form-control" maxlength="10" id="cantIt-5">
-          </th>
-          <td>
-            <input type="text" name="DescIt-5" class="form-control" maxlength="75" id="DescIt-5">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-5" class="text-end form-control" maxlength="12" id="ValorIt-5">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-5"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-5"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-5"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-5"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-5"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-5"
+              />
+            </td>
+          </tr>
 
           <!--  Item6  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-6" class="form-control" maxlength="10" id="cantIt-6">
-          </th>
-          <td>
-            <input type="text" name="DescIt-6" class="form-control" maxlength="75" id="DescIt-6">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-6" class="text-end form-control" maxlength="12" id="ValorIt-6">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-6"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-6"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-6"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-6"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-6"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-6"
+              />
+            </td>
+          </tr>
 
           <!--  Item7  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-7" class="form-control" maxlength="10" id="cantIt-7">
-          </th>
-          <td>
-            <input type="text" name="DescIt-7" class="form-control" maxlength="75" id="DescIt-7">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-7" class="text-end form-control" maxlength="12" id="ValorIt-7">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-7"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-7"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-7"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-7"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-7"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-7"
+              />
+            </td>
+          </tr>
 
           <!--  Item8  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-8" class="form-control" maxlength="10" id="cantIt-8">
-          </th>
-          <td>
-            <input type="text" name="DescIt-8" class="form-control" maxlength="75" id="DescIt-8">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-8" class="text-end form-control" maxlength="12" id="ValorIt-8">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-8"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-8"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-8"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-8"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-8"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-8"
+              />
+            </td>
+          </tr>
 
           <!--  Item9  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-9" class="form-control" maxlength="10" id="cantIt-9">
-          </th>
-          <td>
-            <input type="text" name="DescIt-9" class="form-control" maxlength="75" id="DescIt-9">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-9" class="text-end form-control" maxlength="12" id="ValorIt-9">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-9"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-9"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-9"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-9"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-9"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-9"
+              />
+            </td>
+          </tr>
 
           <!--  Item10  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-10" class="form-control" maxlength="10" id="cantIt-10">
-          </th>
-          <td>
-            <input type="text" name="DescIt-10" class="form-control" maxlength="75" id="DescIt-10">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-10" class="text-end form-control" maxlength="12" id="ValorIt-10">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-10"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-10"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-10"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-10"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-10"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-10"
+              />
+            </td>
+          </tr>
 
           <!--  Item11  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-11" class="form-control" maxlength="10" id="cantIt-11">
-          </th>
-          <td>
-            <input type="text" name="DescIt-11" class="form-control" maxlength="75" id="DescIt-11">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-11" class="text-end form-control" maxlength="12" id="ValorIt-11">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-11"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-11"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-11"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-11"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-11"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-11"
+              />
+            </td>
+          </tr>
 
           <!--  Item12  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-12" class="form-control" maxlength="10" id="cantIt-12">
-          </th>
-          <td>
-            <input type="text" name="DescIt-12" class="form-control" maxlength="75" id="DescIt-12">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-12" class="text-end form-control" maxlength="12" id="ValorIt-12">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-12"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-12"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-12"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-12"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-12"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-12"
+              />
+            </td>
+          </tr>
 
           <!--  Item13  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-13" class="form-control" maxlength="10" id="cantIt-13">
-          </th>
-          <td>
-            <input type="text" name="DescIt-13" class="form-control" maxlength="75" id="DescIt-13">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-13" class="text-end form-control" maxlength="12" id="ValorIt-13">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-13"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-13"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-13"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-13"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-13"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-13"
+              />
+            </td>
+          </tr>
 
-        
           <!--  Item14  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-14" class="form-control" maxlength="10" id="cantIt-14">
-          </th>
-          <td>
-            <input type="text" name="DescIt-14" class="form-control" maxlength="75" id="DescIt-14">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-14" class="text-end form-control" maxlength="12" id="ValorIt-14">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-14"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-14"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-14"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-14"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-14"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-14"
+              />
+            </td>
+          </tr>
 
           <!--  Item15  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-15" class="form-control" maxlength="10" id="cantIt-15">
-          </th>
-          <td>
-            <input type="text" name="DescIt-15" class="form-control" maxlength="75" id="DescIt-15">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-15" class="text-end form-control" maxlength="12" id="ValorIt-15">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-15"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-15"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-15"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-15"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-15"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-15"
+              />
+            </td>
+          </tr>
 
           <!--  Item16  -->
-        <tr>
-          <th scope="row">
-            <input type="text" name="cantIt-16" class="form-control" maxlength="10" id="cantIt-16">
-          </th>
-          <td>
-            <input type="text" name="DescIt-16" class="form-control" maxlength="75" id="DescIt-16">
-          </td>
-          <td>
-            <input type="text" name="ValorIt-16" class="text-end form-control" maxlength="12" id="ValorIt-16">
-          </td>
-        </tr>
+          <tr>
+            <th scope="row">
+              <input
+                type="text"
+                name="cantIt-16"
+                class="form-control"
+                maxlength="10"
+                id="cantIt-16"
+              />
+            </th>
+            <td>
+              <input
+                type="text"
+                name="DescIt-16"
+                class="form-control"
+                maxlength="75"
+                id="DescIt-16"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="ValorIt-16"
+                class="text-end form-control"
+                maxlength="12"
+                id="ValorIt-16"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Fin Tabla de Items -->
 
-      </tbody>
-    </table>
-    <!-- Fin Tabla de Items -->
-
-    <!-- Campo total -->
-    <div class="row col-form-label pb-3">
-      <div class="col-10 fw-bold text-end">
-        <p id="TotalTxt">Total:</p>
+      <!-- Campo total -->
+      <div class="row col-form-label pb-3">
+        <div class="col-10 fw-bold text-end">
+          <p id="TotalTxt">Total:</p>
+        </div>
+        <div class="col-2">
+          <input
+            type="text"
+            name="ValorIt-2"
+            maxlength="18"
+            class="text-end form-control"
+            id="ValorTotal"
+          />
+        </div>
       </div>
-      <div class="col-2">
-        <input type="text" name="ValorIt-2" maxlength="18" class="text-end form-control" id="ValorTotal">
+
+      <!-- Inico Footer -->
+      <div class="row border-top border-bottom border-dark border-1">
+        <div class="col-6">
+          <p class="small fw-bold m-0 col-form-label pb-3">TRANSPORTE</p>
+          <p class="small fw-bold m-0 col-form-label pb-3">DOMICILIO</p>
+          <p class="small fw-bold m-0 col-form-label pb-3">CUIT</p>
+        </div>
+        <div class="col-6 border-start border-dark border-1">
+          <p class="small fw-bold col-form-label">RECIBÍ CONFORME</p>
+          <br />
+          <br />
+          <br />
+          <p class="text-center border-top border-dark">Firma y aclaración</p>
+        </div>
       </div>
-    </div>
+      <!-- Fin Footer -->
 
-    <!-- Inico Footer -->
-    <div class="row border-top border-bottom border-dark border-1">
-      <div class="col-6">
-        <p class="small fw-bold m-0 col-form-label pb-3">
-          TRANSPORTE
-        </p>
-        <p class="small fw-bold m-0 col-form-label pb-3">
-          DOMICILIO
-        </p>
-        <p class="small fw-bold m-0 col-form-label pb-3">
-          CUIT
-        </p>
+      <!-- Boton Imprimir -->
+      <div id="Boton">
+        <div class="d-grid gap-2 d-flex justify-content-end mt-4">
+          <button type="submit" class="btn btn-lg btn-danger">
+            <i class="bi bi-printer me-1"></i> Imprimir
+          </button>
+        </div>
       </div>
-      <div class="col-6 border-start border-dark border-1 ">
-        <p class="small fw-bold col-form-label">
-          RECIBÍ CONFORME
-        </p>
-        <br>
-        <br>
-        <br>
-        <P class="text-center border-top border-dark">
-          Firma y aclaración
-        </P>
-      </div>
-    </div>
-    <!-- Fin Footer -->
+    </form>
 
-    <!-- Imagen CAI -->
-    <div class="mt-3 offset-2">
-      <img src="assets/img/img-CAI.png" alt="">
-    </div>
-
-    <!-- Boton Imprimir -->
-    <div class="border-top border-dark border-1" id="Boton">
-      <div class="d-grid gap-2 d-flex justify-content-end  mt-4 mb-4">
-        <button type="submit" class="btn btn-lg btn-danger"> <i class="bi bi-printer me-1"></i> Imprimir</button>
-      </div>
-    </div>
-  </form>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jspdf.min.js"></script>
-  <script src="assets/js/app.js"></script>
-</body>
-
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jspdf.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/printToPdfFunction.js"></script>
+  </body>
 </html>
